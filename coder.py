@@ -35,7 +35,7 @@ while n == 10:
           char = putmessagehere[msglength2]
           msglength2 += -1
           coded += char
-          coded += random.choice(string.ascii_lowercase)
+          coded += random.choice(string.ascii_lowercase + string.digits)
       if decoding == True:
           for index in msglength1:
               if index % 2 != 1:
@@ -50,14 +50,6 @@ while n == 10:
   if decoding == True:
       print("Here is your decoded message. Try our coder!")
       print(coded[:round(len(coded)/2)])
-
-
-
-
-
-
-
-
 
 
 
